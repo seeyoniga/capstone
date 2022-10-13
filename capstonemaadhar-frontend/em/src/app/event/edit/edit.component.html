@@ -1,0 +1,46 @@
+<div class="container">
+    <legend>Edit Event Details</legend>
+    <form>
+      <div class="mb-3">
+        <label for="txtName" class="form-label">Name</label>
+        <input type="text" name="name" [(ngModel)] = "evtForm.name" class="form-control" id="txtName" />
+      </div>
+      <div class="mb-3">
+        <label for="txtDob" class="form-label">Date Of Birth</label>
+        <input type="text" name="dob" [(ngModel)] = "evtForm.dob" class="form-control" id="txtDob" />
+      </div>
+      <div class="mb-3">
+        <label for="txtAddress" class="form-label">Address</label>
+        <input type="text" name="address" [(ngModel)] = "evtForm.address" class="form-control" id="txtAdddress" />
+      </div>
+      <div class="mb-3">
+        <label for="txtEmailid" class="form-label">Email Id</label>
+        <input type="text" name="emailid" [(ngModel)] = "evtForm.emailid" class="form-control" id="txtEmailid" />
+      </div>
+      <div class="mb-3">
+        <label for="txtMobileno" class="form-label">Mobile Number</label>
+        <input type="text" name="mobileno" [(ngModel)] = "evtForm.mobileno" class="form-control" id="txtMobileno" />
+      </div>
+      <div class="mb-3">
+        <label for="txtGender" class="form-label">Gender</label>
+        <input type="text" name="gender" [(ngModel)] = "evtForm.gender" class="form-control" id="txtGender" />
+      </div>
+      <div class="mb-3">
+        <label for="txtAid" class="form-label">Aadhar ID</label>
+        <input type="text" name="aid" [(ngModel)] = "evtForm.aid" class="form-control" id="txtAid" />
+      </div>
+      <div class="mb-3">
+        <label for="txtCid" class="form-label">Citizen ID</label>
+        <input type="text" name="cid" [(ngModel)] = "evtForm.cid" class="form-control" id="txtCid" />
+      </div>
+      <div class="mb-3">
+        <label for="txtPid" class="form-label">Passport ID</label>
+        <input type="text" name="pid" [(ngModel)] = "evtForm.pid" class="form-control" id="txtPid" />
+      </div>
+      <div class="mb-3">
+        <label for="txtIssuedate" class="form-label">Issue Date</label>
+        <input type="text" name="issuedate" [(ngModel)] = "evtForm.issuedate" class="form-control" id="txtIssuedate" />
+      </div>
+      <button type="button" (click)="update()" class="btn btn-primary">Update Event Details</button>
+    </form>
+</div>

@@ -1,0 +1,80 @@
+{
+  "events": [
+    {
+      "id": 3,
+      "name": "Seeyoniga Prince",
+      "dob": "26-02-01",
+      "address": "No 32 vadugu street, mylapore,chennai, India",
+      "emailid": "seeyo2602@gmail.com",
+      "mobileno": "6379583643",
+      "gender": "female",
+      "aid": "100012000130001",
+      "cid": "260201",
+      "pid": "1234567890098765",
+      "issuedate": "13-10-2022"
+    },
+    {
+      "id": 5,
+      "name": "Femimma Prince",
+      "dob": "17-07-1977",
+      "address": "158 A 9th Link,Taramani, Chennai , India",
+      "emailid": "femimma@gmail.com",
+      "mobileno": "9940616500",
+      "gender": "Female",
+      "aid": "100012000130002",
+      "cid": "260202",
+      "pid": "1234567890098767",
+      "issuedate": "13-10-2022"
+    }
+  ],
+  "users": [
+    {
+      "id": 2,
+      "name": "admin",
+      "dob": "01-01-01",
+      "address": "India",
+      "emailid": "admin@gmail.com",
+      "mobileno": "admin@123",
+      "gender": "Male"
+    },
+    {
+      "id": 3,
+      "name": "Seeyoniga Prince",
+      "dob": "26-02-01",
+      "address": "No 32 vadugu street,mylapore,chennai,India",
+      "emailid": "seeyo2602@gmail.com",
+      "mobileno": "6379583643",
+      "gender": "female"
+    },
+    {
+      "id": 5,
+      "name": "Femimma Prince",
+      "dob": "17-07-1977",
+      "address": "158 A 9th link, Taramani, Chennai,India",
+      "emailid": "femimma@gmail.com",
+      "mobileno": "9940616500",
+      "gender": "Female"
+    },
+    {
+      "id": 6,
+      "name": "Leahnega",
+      "dob": "17-09-2011",
+      "address": "158 A 9th Link , Taramani",
+      "emailid": "Leahnega@gmail.com",
+      "mobileno": "9940616400",
+      "gender": "Female"
+    }
+  ],
+  "requests": [
+    {
+      "id": 5,
+      "name": "Femimma Prince",
+      "dob": "17-07-1977",
+      "address": "158 A 9th Link,Taramani,Chennai,India",
+      "emailid": "femimma@gmail.com",
+      "mobileno": "9940616500",
+      "gender": "Female",
+      "request": "request for deleting aadhar"
+    }
+  ]
+}

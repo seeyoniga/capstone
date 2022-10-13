@@ -1,0 +1,63 @@
+<table class="table">
+    <div class="container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Citizen Login Id</th>
+            <th scope="col">Citizen Name</th>
+            <th scope="col">Citizen Date Of Birth</th>
+            <th scope="col">Citizen Address</th>
+            <th scope="col">Citizen Email ID</th>
+            <th scope="col">Citizen Mobile Number</th>
+            <th scope="col">Citizen Gender</th>
+            <th scope="col">Citizen Aadhar ID</th>
+            <th scope="col">Citizen ID</th>
+            <th scope="col">Citizen Passport ID</th>
+            <th scope="col">Citizen Aadhar Issue Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of allEvents">
+            <th scope="row">{{ item.id }}</th>
+            <td>{{ item.name }}</td>
+            <td>{{ item.dob }}</td>
+            <td>{{ item.address }}</td>
+            <td>{{ item.emailid }}</td>
+            <td>{{ item.mobileno }}</td>
+            <td>{{ item.gender }}</td>
+            <td>{{ item.aid }}</td>
+            <td>{{ item.cid }}</td>
+            <td>{{ item.pid }}</td>
+            <td>{{ item.issuedate }}</td>
+            <td>
+              <a class="btn btn-primary" [routerLink]="['/edit',item.id]">Edit Aadhar Details</a>
+            </td>
+            <td>
+              <button type="button" (click)="openDeleteModal(item.id)" class="btn btn-danger">Delete Aadhar </button>
+            </td>
+          </tr>          
+        </tbody>
+      </table>
+    </div>
+  </table>
+  <br>
+
+  <h1 align="center"><a class="btn btn-primary btn-lg" [routerLink]="['/adminhome']">Go Back To Homepage</a></h1> <br>
+<!-- Modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLabel">Warning!</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      Are you sure to delete the item?
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      <button type="button" class="btn btn-danger" (click)="delete()">Confirm Delete</button>
+    </div>
+  </div>
+</div>
+</div>

@@ -1,0 +1,32 @@
+<table class="table">
+    <div class="container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Citizen Login Id</th>
+            <th scope="col">Citizen Name</th>
+            <th scope="col">Citizen Date Of Birth</th>
+            <th scope="col">Citizen Address</th>
+            <th scope="col">User Email ID</th>
+            <th scope="col">Citizen Mobile Number</th>
+            <th scope="col">Citizen Gender</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of allUsers">
+            <th scope="row">{{ item.id }}</th>
+            <td>{{ item.name }}</td>
+            <td>{{ item.dob }}</td>
+            <td>{{ item.address }}</td>
+            <td>{{ item.emailid }}</td>
+            <td>{{ item.mobileno }}</td>
+            <td>{{ item.gender }}</td>
+          </tr>          
+        </tbody>
+      </table>
+    </div>
+  </table>
+
+  <br>
+
+<h1 align="center"><a class="btn btn-primary btn-lg" [routerLink]="['/adminhome']">Go Back To Homepage</a></h1> <br>
